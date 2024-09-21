@@ -51,3 +51,7 @@ class Calculadora {
     }
 
 }
+window.onload = () => {
+    const display = document.getElementById('display') as HTMLInputElement;
+    new Calculadora(display);
+};
