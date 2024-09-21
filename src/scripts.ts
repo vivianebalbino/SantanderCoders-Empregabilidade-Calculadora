@@ -34,4 +34,15 @@ class Calculadora {
     atualizarDisplay() {
         this.elementoDisplay.value = this.entradaAtual;
     }
+
+    calcular() {
+        try {
+            this.entradaAtual = eval(this.entradaAtual);
+            this.atualizarDisplay();
+        } catch (erro) {
+            this.entradaAtual = 'Erro';
+            this.atualizarDisplay();
+        }
+    }
+
 }
