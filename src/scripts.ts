@@ -13,4 +13,16 @@ class Calculadora {
             botao.addEventListener('click', () => this.aoClicarBotao(botao));
         });
     }
+
+    aoClicarBotao(botao: Element) {
+        const valor = (botao as HTMLButtonElement).value;
+
+        if (valor === '=') {
+            this.calcular();
+        } else if (valor === 'C') {
+            this.limpar();
+        } else {
+            this.adicionarEntrada(valor);
+        }
+    }
 }
