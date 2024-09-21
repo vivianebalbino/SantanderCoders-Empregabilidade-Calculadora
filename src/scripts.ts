@@ -25,4 +25,9 @@ class Calculadora {
             this.adicionarEntrada(valor);
         }
     }
+
+    adicionarEntrada(valor: string) {
+        this.entradaAtual += valor;
+        this.atualizarDisplay();
+    }
 }
