@@ -30,4 +30,8 @@ class Calculadora {
         this.entradaAtual += valor;
         this.atualizarDisplay();
     }
+
+    atualizarDisplay() {
+        this.elementoDisplay.value = this.entradaAtual;
+    }
 }
