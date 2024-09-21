@@ -44,5 +44,10 @@ class Calculadora {
             this.atualizarDisplay();
         }
     }
+    
+    limpar() {
+        this.entradaAtual = '';
+        this.atualizarDisplay();
+    }
 
 }
