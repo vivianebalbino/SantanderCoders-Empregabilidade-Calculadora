@@ -1,5 +1,9 @@
-//alert("aqui estou");
+class Calculadora {
+    elementoDisplay: HTMLInputElement;
+    entradaAtual: string = '';
 
-console.log("teste")
-console.log("compila")
-console.log("teste")
+    constructor(elementoDisplay: HTMLInputElement) {
+        this.elementoDisplay = elementoDisplay;
+        this.vincularEventos();
+    }
+}
